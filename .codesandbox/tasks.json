@@ -1,0 +1,112 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    },
+    {
+      "name": "Build Everything",
+      "command": "npm run build"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "lint": {
+      "name": "lint",
+      "command": "npm run lint",
+      "runAtStart": false
+    },
+    "lint-config": {
+      "name": "lint-config",
+      "command": "npm run lint-config",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "npm run clean",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": true
+    },
+    "watch": {
+      "name": "watch",
+      "command": "npm run watch",
+      "runAtStart": false
+    },
+    "fmt": {
+      "name": "fmt",
+      "command": "npm run fmt",
+      "runAtStart": false
+    },
+    "test-library": {
+      "name": "test-library",
+      "command": "npm run test-library",
+      "runAtStart": false
+    },
+    "test-polyfills": {
+      "name": "test-polyfills",
+      "command": "npm run test-polyfills",
+      "runAtStart": false
+    },
+    "test-all-polyfills": {
+      "name": "test-all-polyfills",
+      "command": "npm run test-all-polyfills",
+      "runAtStart": false
+    },
+    "test-end-to-end": {
+      "name": "test-end-to-end",
+      "command": "npm run test-end-to-end",
+      "runAtStart": false
+    },
+    "test-node": {
+      "name": "test-node",
+      "command": "npm run test-node",
+      "runAtStart": false
+    },
+    "test-node-unit": {
+      "name": "test-node-unit",
+      "command": "npm run test-node-unit",
+      "runAtStart": false
+    },
+    "test-node-coverage": {
+      "name": "test-node-coverage",
+      "command": "npm run test-node-coverage",
+      "runAtStart": false
+    },
+    "test-coverage": {
+      "name": "test-coverage",
+      "command": "npm run test-coverage",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "prepublishOnly": {
+      "name": "prepublishOnly",
+      "command": "npm run prepublishOnly",
+      "runAtStart": false
+    },
+    "create-new-polyfill": {
+      "name": "create-new-polyfill",
+      "command": "npm run create-new-polyfill",
+      "runAtStart": false
+    },
+    "update-browserstack-list": {
+      "name": "update-browserstack-list",
+      "command": "npm run update-browserstack-list",
+      "runAtStart": false
+    },
+    "version": {
+      "name": "version",
+      "command": "npm run version",
+      "runAtStart": false
+    }
+  }
+}

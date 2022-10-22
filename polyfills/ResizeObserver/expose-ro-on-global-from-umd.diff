@@ -1,0 +1,21 @@
+--- a/polyfills/ResizeObserver/polyfill.js
++++ b/polyfills/ResizeObserver/polyfill.js
+@@ -503,6 +503,12 @@
+         return ResizeObserver;
+     }());
+ 
++    /**
++      * Patched in from polyfill-library to put this in the global scope.
++      */
++    global.ResizeObserver = ResizeObserver;
++    global.ResizeObserverEntry = ResizeObserverEntry;
++    global.ResizeObserverSize = ResizeObserverSize;
++
+     exports.ResizeObserver = ResizeObserver;
+     exports.ResizeObserverEntry = ResizeObserverEntry;
+     exports.ResizeObserverSize = ResizeObserverSize;
+@@ -510,4 +517,3 @@
+     Object.defineProperty(exports, '__esModule', { value: true });
+ 
+ })));
+\ No newline at end of file
